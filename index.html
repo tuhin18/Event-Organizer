@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Organizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid/main.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Event Organizer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="parallax">
+            <h2>Welcome to Event Organizer</h2>
+            <p>Plan, promote, and manage your events with ease.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide comprehensive event management solutions.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Event Planning</li>
+                <li>Event Promotion</li>
+                <li>Event Management</li>
+            </ul>
+        </section>
+        <section id="calendar">
+            <h2>Event Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="share">
+            <h2>Share This Event</h2>
+            <div class="share-buttons">
+                <button class="share-button facebook">Share on Facebook</button>
+                <button class="share-button twitter">Share on Twitter</button>
+                <button class="share-button linkedin">Share on LinkedIn</button>
+            </div>
+        </section>
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <form id="rsvpForm">
+                <label for="rsvpName">Name:</label>
+                <input type="text" id="rsvpName" name="rsvpName" required>
+                <label for="rsvpEmail">Email:</label>
+                <input type="email" id="rsvpEmail" name="rsvpEmail" required>
+                <button type="submit">RSVP</button>
+            </form>
+        </section>
+        <section id="feedback">
+            <h2>Event Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedbackText">Your Feedback:</label>
+                <textarea id="feedbackText" name="feedbackText" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Event Organizer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
